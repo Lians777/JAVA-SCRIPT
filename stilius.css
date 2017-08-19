@@ -1,0 +1,13 @@
+
+.container-fluid {background-color: green; height: 150px;}
+
+
+.left {background-color: red;
+padding: 10px;
+color: grey;}
+
+
+
+.right {background-color: yellow;
+padding: 10px;
+color: black;}
