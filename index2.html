@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sesta paskaita</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="stilius2.css">
+</head>
+<body>
+
+<div class="container-fluid"><H1>JAVA SKRIPT</H1> </div>
+
+<div class="container">
+	<div class="row">
+		<div class="col left"> 
+			<div id="rezultatas" >none</div>
+
+			<div class="row">
+			<div class="langelis" id="q" ></div>
+			<div class="langelis" id="w" ></div>
+			<div class="langelis" id="e" ></div>
+			<div class="langelis" id="r" ></div>
+			<div class="langelis" id="t" ></div>
+			<div class="langelis" id="y" ></div>
+			<div class="langelis" id="u" ></div>
+			<div class="langelis" id="i" ></div>
+			<div class="langelis" id="o" ></div>
+			<div class="langelis" id="p" ></div>
+			</div>
+
+
+		
+
+	
+		<div class="col right"> 
+		<input id="a" class="form-control" type="text" name="a">
+		<input id="b" class="form-control" type="text" name="b">
+		<button onclick="calc()" class="btn btn-lg btn-outline-dark">GO!</button>
+
+		<button onclick="document.getElementById('w').innerHTML = getRndInteger(1,10)">Click Me</button>
+		</div>
+	
+
+
+		</div>
+	</div>
+
+
+	
+
+
+</body>
+</html>
+
+
+<script>
+				
+
+
+		var a, b, suma; 
+
+		function calc() {
+
+		a = parseInt(document.getElementById('a').value);
+		b = parseInt(document.getElementById('b').value);
+
+				suma = (a+b)/b+a*b;
+
+		document.getElementById('rezultatas').innerHTML = "rezultatas yra " + suma;
+		document.getElementById('rezultatas').style.backgroundColor = "red";}
+
+
+</script>
+
+<script>
+	
+document.getElementById("w").innerHTML =
+Math.floor(Math.random() * 10);
+document.getElementById("q").innerHTML =
+Math.floor(Math.random() * 10);
+document.getElementById("e").innerHTML =
+Math.floor(Math.random() * 10);
+document.getElementById("r").innerHTML =
+Math.floor(Math.random() * 10);
+document.getElementById("t").innerHTML =
+Math.floor(Math.random() * 10);
+document.getElementById("y").innerHTML =
+Math.floor(Math.random() * 10);
+document.getElementById("u").innerHTML =
+Math.floor(Math.random() * 10);
+document.getElementById("i").innerHTML =
+Math.floor(Math.random() * 10);
+document.getElementById("o").innerHTML =
+Math.floor(Math.random() * 10);
+document.getElementById("p").innerHTML =
+Math.floor(Math.random() * 10);
+</script>
+
+<script>
+	setInterval(function) {
+		var z = Math.round(Math.random() * 255 );
+		var x = Math.round(Math.random() * 255 );
+		var c = Math.round(Math.random() * 255 );
+		var v = Math.round(Math.random() * 255 );
+		var b = Math.round(Math.random() * 255 );
+		var n = Math.round(Math.random() * 255 );
+		var m = Math.round(Math.random() * 255 );
+		var l = Math.round(Math.random() * 255 );
+		var k = Math.round(Math.random() * 255 );
+		var j = Math.round(Math.random() * 255 );
+		var as = "background: rgb("+z+", "+x+", "+c+", "+v+", "+b+", "+n+", "+n+", "+m+", "+l+", "+k+", "+j+");";
+		var element = document.getElementById("q");
+		element. style = as;
+	}, 1000);
+
+
+
+</script>

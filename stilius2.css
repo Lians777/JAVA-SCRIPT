@@ -1,0 +1,14 @@
+.container-fluid {background-color: brown;
+height: 150px;}
+
+.container {background-color: red;}
+
+.left {background-color: green;}
+
+.right {background-color: yellow;}
+
+.langelis {padding: 50px;
+margin: 30px;
+background-color: red;
+transition: 1s
+}

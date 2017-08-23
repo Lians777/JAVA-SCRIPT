@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>random color</title>
+	<style>
+		.div {background-color: black;
+			width: 150px;
+			height: 150px;}
+
+	</style>
+
+</head>
+<body>
+<input id="boton" type="button" value="GO">
+<div class="div" id="body" ></div>
+</body>
+
+<script>
+	
+	function inicio(){
+		var boton = document.getElementById('boton');
+		boton.addEventListener("click", GO);
+	}
+
+	function GO(){
+
+		var lista = ["yellow","green","grey","gold","silver","brown"];
+		var div = document.getElementById("body");
+
+		div.style.background =lista[Math.floor(Math.random() * lista.lenght)];
+		inicio();
+	}
+</script>
+
+</html>
